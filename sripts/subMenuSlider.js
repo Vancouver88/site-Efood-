@@ -3,6 +3,8 @@ const subMenuSlider = new Swiper('.slider', {
 	observeParents: true,
 	slidesPerView: 5,
 	loop: true,
+	initialSlide: 0,
+	centeredSlides: true,
 	pagination: {
 		el: '.submenu-pagination',
 		clickable: true
@@ -12,18 +14,20 @@ const subMenuSlider = new Swiper('.slider', {
 		prevEl: '.submenu-btn-next',
 	},
 	breakpoints: {
-		// when window width is >= 320px
 		320: {
+			slidesPerView: 1.35,
+		},
+		480: {
 			slidesPerView: 2,
 		},
-		// when window width is >= 480px
-		480: {
-			slidesPerView: 5,
+		640: {
+			slidesPerView: 3.5,
 		},
-		// // when window width is >= 640px
-		// 640: {
-		// 	slidesPerView: 4,
-		// 	spaceBetween: 40
-		// }
+		950: {
+			slidesPerView: 4.7,
+		},
+		1078: {
+			slidesPerView: 5,
+		}
 	}
 });

@@ -412,7 +412,7 @@ body {
 		padding       : 0 10px;
 
 		&:not(:last-child) {
-			margin: 0 29px 0 0;
+			margin: 0 28px 0 0;
 		}
 	}
 
@@ -526,13 +526,14 @@ body {
 	}
 
 	.topfood-menu {
+		margin: 0 -20px 0 0;
 
 		&__item {
 			flex         : 0 1 361px;
 			background   : #FFFFFF;
 			border-radius: 53px 5px;
 			box-shadow   : 0px 4px 12px rgba(0, 0, 0, 0.12);
-			margin       : 0 0 43px 0;
+			margin       : 0 20px 43px 0;
 		}
 
 		&__item-title {
@@ -1034,6 +1035,15 @@ hr {
 	}
 }
 
+@media (max-width: 1152px) {
+	.topfood {
+
+		&__menu {
+			justify-content: space-around;
+		}
+	}
+}
+
 @media (max-width: 1100px) {
 	.main-block {
 
@@ -1060,13 +1070,6 @@ hr {
 		flex-direction : column;
 		justify-content: center;
 		align-items    : flex-start;
-	}
-
-	.topfood {
-
-		&__menu {
-			justify-content: space-around;
-		}
 	}
 
 	.download {
@@ -1167,7 +1170,7 @@ hr {
 		.menu-category {
 			overflow-x     : scroll;
 			justify-content: space-between;
-			padding        : 10px 0;
+			padding        : 10px 0 15px;
 
 			&__item {
 				flex: 1 0 210px;
@@ -1330,6 +1333,8 @@ hr {
 		padding: 90px 0 0 0;
 
 		.topfood-menu {
+			margin: 0;
+
 			&__item {
 				margin: 0 15px 43px 15px;
 			}
